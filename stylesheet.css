@@ -1,0 +1,154 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+  background-color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.3em;
+  line-height: 2;
+  margin: 2% auto;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1 a {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1em 0 0 0;
+}
+
+h2 a {
+  border-bottom: none;
+}
+
+.date {
+  color: #e3e3e3;
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+hr {
+  border-bottom: 0px solid transparent;
+  border-top: 1px solid #eee;
+  margin: 1em 0 1em 0;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+ul li {
+  list-style-type: lower-alpha;
+}
+
+code {
+  font-family: "Inconsolata", "Menlo", monospace;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2% auto;
+  padding: 1% 2%;
+}
+
+.posts {
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  list-style-type: none;
+  margin: 5em 0 5em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Priting code prettier, modified Sunburst theme by David Leibovic */
+
+  .str { color: #22624B; }  /* string content */
+  .kwd { color: #8C313B; }  /* a keyword */
+  .com { color: #666; }  /* a comment */
+  .typ { color: #926B33; }  /* a type name */
+  .lit { color: #4F6F46; }  /* a literal value */
+  .pln { color: #26435F; }
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #9E6F38; }
+  .tag { color: #26435F; }  /* a markup tag name */
+  .atn { color: #926B33; }  /* a markup attribute name */
+  .atv { color: #22624B; }  /* a markup attribute value */
+  .dec, .var { color: #606; }  /* a declaration; a variable name */
+  .fun { color: #445E50; }  /* a function name */
+
+pre.prettyprint, code.prettyprint {
+  font-family: "Inconsolata", "Menlo", monospace;
+  background-color: #fafafa;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #CCC; } /* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { }
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 { }
+
+pre.prettyprint {
+    padding: 0.5em;
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+@media print {
+  .str { color: #22624B; }  /* string content */
+  .kwd { color: #8C313B; }  /* a keyword */
+  .com { color: #666; }  /* a comment */
+  .typ { color: #926B33; }  /* a type name */
+  .lit { color: #4F6F46; }  /* a literal value */
+  .pln { color: #26435F; }
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #9E6F38; }
+  .tag { color: #26435F; }  /* a markup tag name */
+  .atn { color: #926B33; }  /* a markup attribute name */
+  .atv { color: #22624B; }  /* a markup attribute value */
+  .dec, .var { color: #606; }  /* a declaration; a variable name */
+  .fun { color: #445E50; }  /* a function name */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
