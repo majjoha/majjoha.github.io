@@ -148,7 +148,7 @@ pre.prettyprint {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .container {
-    width: 100%;
+    width: 80%;
     padding: 0;
   }
 }
