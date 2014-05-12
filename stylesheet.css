@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 
 body {
@@ -8,7 +8,7 @@ body {
   font-size: 1.3em;
   line-height: 2;
   margin: 2% auto;
-  color: #333;
+  color: #444;
 }
 
 h1, h2, h3, h4 {
