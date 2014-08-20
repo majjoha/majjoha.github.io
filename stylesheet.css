@@ -1,10 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 
 body {
   background-color: #fff;
-  font-family: "Merriweather", serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.3em;
   line-height: 2;
   margin: 2% auto;
