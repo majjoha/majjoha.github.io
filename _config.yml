@@ -1,4 +1,4 @@
 name: Gazing at Darwin
-permalink: '/:title'
+permalink: '/:year/:month/:day/:title'
 markdown: redcarpet
 destination: public
