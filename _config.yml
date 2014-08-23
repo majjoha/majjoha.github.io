@@ -1,5 +1,4 @@
 name: Gazing at Darwin
 permalink: '/:title'
 markdown: redcarpet
-pygments: true
 destination: public
