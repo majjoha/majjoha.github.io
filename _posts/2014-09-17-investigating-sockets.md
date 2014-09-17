@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Investigating sockets"
-date:   2014-09-16
+date:   2014-09-17
 ---
 
 During this summer, I've revisited an old side project of mine which is a
