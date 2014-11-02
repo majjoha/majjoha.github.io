@@ -2,3 +2,5 @@ name: Gazing at Darwin
 permalink: '/:year/:month/:day/:title'
 markdown: redcarpet
 destination: public
+sass:
+  style: :compressed
