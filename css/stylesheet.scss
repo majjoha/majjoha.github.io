@@ -4,6 +4,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+
+$blue: #70a4c4;
 
 body {
   background-color: #fff;
@@ -15,8 +18,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
 }
 
 h1 {
@@ -36,6 +39,10 @@ h2 a {
   border-bottom: none;
 }
 
+nav {
+  text-align: left;
+}
+
 .date {
   color: #e3e3e3;
   margin: 0 0 1em 0;
@@ -44,7 +51,6 @@ h2 a {
 a {
   color: #333;
   text-decoration: none;
-  border-bottom: 1px solid #ccc;
 }
 
 hr {
@@ -77,6 +83,13 @@ code {
 .posts {
   margin: 0;
   padding: 0;
+
+  p a {
+    color: $blue;
+    &:hover {
+      color: darken($blue, 10%);
+    }
+  }
 }
 
 .post {
