@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Starting All Over Again"
+title:  "Starting all over again"
 date:   2013-09-07
 ---
 

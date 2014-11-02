@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Rails Controllers"
+title:  "On Rails controllers"
 date:   2013-09-14
 ---
 
