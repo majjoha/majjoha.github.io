@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automate the Bastard"
+title:  "Automate the bastard"
 date:   2014-02-13
 ---
 
