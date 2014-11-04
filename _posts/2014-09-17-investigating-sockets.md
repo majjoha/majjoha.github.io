@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Investigating sockets"
+title:  "Investigating Sockets"
 date:   2014-09-17
 ---
 
