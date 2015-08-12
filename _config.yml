@@ -1,6 +1,9 @@
-name: Gazing at Darwin
+name: Mathias Jean Johansen
 permalink: '/:year/:month/:day/:title'
 markdown: redcarpet
 destination: public
 sass:
   style: :compressed
+gems:
+  - octopress-autoprefixer
+  - jekyll-sitemap
