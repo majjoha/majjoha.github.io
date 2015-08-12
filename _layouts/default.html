@@ -2,24 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ site.name }}</title>
-  <meta name="description" content="Gazing at Darwin is the personal blog of Mathias Jean Johansen.">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="Mathias Jean Johansen is a Danish software engineer.">
   <meta name="viewport" content="width=device-width; initial-scale=0.5; maximum-scale=1.0;">
   <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata">
   <link rel="stylesheet" href="/css/stylesheet.css">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
   <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 </head>
 <body onload="prettyPrint()">
-
-  <div class="container">
-    <h1><a href="/">{{ site.name }}</a></h1>
-    <ul class="posts">
-    {{ content }}
-    </ul>
-  </div>
-
+  <main>
+    <header>
+      <h1>Mathias Jean Johansen</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="https://twitter.com/majjoha">Twitter</a>
+        <a href="https://github.com/majjoha">GitHub</a>
+      </nav>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+  </main>
 <script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-35562833-1']);

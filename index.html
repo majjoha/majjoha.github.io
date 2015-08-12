@@ -1,11 +1,11 @@
 ---
 layout: default
+title: "Mathias Jean Johansen"
 ---
 
 {% for post in site.posts %}
-<li class="post">
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <h3 class="date">{{ post.date | date: "%b %-d, %Y" }}</h3>
-  {{ post.content }}
-</li>
+<article>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>
+</article>
 {% endfor %}

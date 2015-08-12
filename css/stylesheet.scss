@@ -1,106 +1,158 @@
 ---
 ---
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
-@import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700);
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);
-@import url(http://fonts.googleapis.com/css?family=Lato:900);
-
-$blue: #70a4c4;
+$serif: "Georgia", "Times New Roman", serif;
+$sans-serif: "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+$main-bg: #FFF;
+$main-fg: #666;
+$inline-bg: #F9FAFA;
 
 body {
-  background-color: #fff;
-  font-family: "Noto Serif", serif;
-  font-size: 1.3em;
-  line-height: 2;
-  margin: 2% auto;
-  color: #444;
+  background: $main-bg;
+  color: $main-fg;
+  font-family: $serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  text-align: center;
+header, time, h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-serif;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-h1 a {
-  border-bottom: none;
-}
-
-h2 {
-  font-size: 2em;
-  margin: 1em 0 0 0;
-}
-
-h2 a {
-  border-bottom: none;
-}
-
-nav {
-  text-align: left;
-}
-
-.date {
-  color: #e3e3e3;
-  margin: 0 0 1em 0;
+p {
+  line-height: 1.8;
+  margin: auto auto 1rem auto;
 }
 
 a {
-  color: #333;
+  color: #08c;
   text-decoration: none;
 }
 
-hr {
-  border-bottom: 0px solid transparent;
-  border-top: 1px solid #eee;
-  margin: 1em 0 1em 0;
+a:hover {
+  text-decoration: underline;
 }
 
-blockquote {
-  border-left: 5px solid #ccc;
-  margin-left: 0;
-  padding-left: 1em;
+time {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #999;
 }
 
-ul li {
-  list-style-type: lower-alpha;
+main {
+  max-width: 42rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
-code {
-  font-family: "Inconsolata", "Menlo", monospace;
-  background-color: #fafafa;
+section {
+  margin-top: 5rem;
+
+  h1 {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  }
 }
 
-.container {
-  max-width: 700px;
-  margin: 2% auto;
-  padding: 1% 2%;
+article {
+  display: flex;
+  width: 100%;
+
+  h1 {
+    font-size: 1rem;
+    margin: 0.5rem auto;
+    flex: 2;
+    color: #0277BD;
+  }
+
+  time {
+    flex: 1;
+    align-self: center;
+    margin: 0;
+
+    text-align: right;
+  }
 }
 
-.posts {
-  margin: 0;
-  padding: 0;
+header {
+  display: flex;
+  padding-bottom: 1rem;
 
-  p a {
-    color: $blue;
-    &:hover {
-      color: darken($blue, 10%);
+  h1 {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  nav {
+    flex: 1;
+    align-self: center;
+    text-align: right;
+
+    a {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
     }
   }
 }
 
-.post {
-  list-style-type: none;
-  margin: 5em 0 5em 0;
+
+ul {
+  margin: 1rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+
+li {
+  line-height: 1.8;
+  display: list-item;
+}
+
+blockquote {
+  background: $inline-bg;
+  padding: 2rem;
+  font-style: italic;
+
+  em:before {
+    content: "\2014";
+  }
+
+  em {
+    font-family: $sans-serif;
+    font-style: normal;
+    padding-top: 1rem;
+    display: block;
+  }
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+code {
+  font-family: "Inconsolata", "Menlo", monospace;
+  background-color: $inline-bg;
+}
+
+pre {
+  margin: 1rem auto;
 }
 
 /* Priting code prettier, modified Sunburst theme by David Leibovic */
@@ -121,7 +173,7 @@ img {
 
 pre.prettyprint, code.prettyprint {
   font-family: "Inconsolata", "Menlo", monospace;
-  background-color: #fafafa;
+  background: $inline-bg;
 }
 
 /* Specify class=linenums on a pre to get line numbering */
@@ -161,11 +213,4 @@ pre.prettyprint {
   .atv { color: #22624B; }  /* a markup attribute value */
   .dec, .var { color: #606; }  /* a declaration; a variable name */
   .fun { color: #445E50; }  /* a function name */
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .container {
-    width: 80%;
-    padding: 0;
-  }
 }
