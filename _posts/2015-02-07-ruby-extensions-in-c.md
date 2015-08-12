@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ruby extensions in C"
+title:  "Ruby Extensions in C"
 date:   2015-02-07 
 ---
 
@@ -92,4 +92,4 @@ Utilizing C in our Ruby programs can be incredibly useful both in order to
 achieve higher performance for specific parts of our application, but also if we
 want interfacing with other C code. If you want to go further, I highly
 recommend that you take a look at the
-[README.EXT](http://docs.ruby-lang.org/en/2.2.0/README_EXT.html) documentation. 
+[`README.EXT`](http://docs.ruby-lang.org/en/2.2.0/README_EXT.html) documentation.

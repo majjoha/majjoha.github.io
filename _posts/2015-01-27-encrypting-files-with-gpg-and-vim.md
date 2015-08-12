@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Encrypting files with GPG and Vim"
+title:  "Encrypting Files With GPG and Vim"
 date:   2015-01-27
 ---
 

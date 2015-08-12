@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Make Preview behave like Vim"
+title:  "Make Preview Behave Like Vim"
 date:   2014-01-19
 ---
 

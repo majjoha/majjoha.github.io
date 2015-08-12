@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kinesis Advantage macros"
+title:  "Kinesis Advantage Macros"
 date:   2014-09-12
 ---
 

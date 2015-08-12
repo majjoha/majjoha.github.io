@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Rails controllers"
+title:  "On Rails Controllers"
 date:   2013-09-14
 ---
 
@@ -8,5 +8,4 @@ date:   2013-09-14
 > steak dinner from a waiter. The waiter takes the request and tells the kitchen
 > that he needs a steak dinner. When the steak dinner is ready, the waiter
 > delivers it to the customer for her enjoyment.
-
-– *Craig Demyanovich*
+> *Craig Demyanovich*
