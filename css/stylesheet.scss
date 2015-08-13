@@ -9,6 +9,18 @@ $main-bg: #FFF;
 $main-fg: #666;
 $inline-bg: #F9FAFA;
 
+@mixin display-flex() {
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin flex($size) {
+  -webkit-flex: $size;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: $size;           /* IE 10 */
+  flex: $size;               /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
 body {
   background: $main-bg;
   color: $main-fg;
@@ -55,18 +67,18 @@ section {
 }
 
 article {
-  display: flex;
+  @include display-flex();
   width: 100%;
 
   h1 {
     font-size: 1rem;
     margin: 0.5rem auto;
-    flex: 2;
+    @include flex(2);
     color: #0277BD;
   }
 
   time {
-    flex: 1;
+    @include flex(1);
     align-self: center;
     margin: 0;
 
@@ -75,17 +87,17 @@ article {
 }
 
 header {
-  display: flex;
+  @include display-flex();
   padding-bottom: 1rem;
 
   h1 {
-    flex: 1;
+    @include flex(1);
     font-size: 1.5rem;
     font-weight: 200;
   }
 
   nav {
-    flex: 1;
+    @include flex(1);
     align-self: center;
     text-align: right;
 
