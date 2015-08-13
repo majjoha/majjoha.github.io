@@ -4,6 +4,7 @@ markdown: redcarpet
 destination: public
 sass:
   style: :compressed
+  sass_dir: css
 gems:
   - octopress-autoprefixer
   - jekyll-sitemap
