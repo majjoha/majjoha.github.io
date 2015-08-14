@@ -2,25 +2,8 @@
 ---
 
 @import "reset";
-
-$serif: "Georgia", "Times New Roman", serif;
-$sans-serif: -apple-system, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
-$monospace: "Inconsolata", "Menlo", monospace;
-$main-bg: #FFF;
-$main-fg: #666;
-$inline-bg: #F9FAFA;
-
-@mixin display-flex() {
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-}
-
-@mixin flex($size) {
-  -webkit-flex: $size;       /* Safari 6.1+. iOS 7.1+, BB10 */
-  -ms-flex: $size;           /* IE 10 */
-  flex: $size;               /* NEW, Spec - Firefox, Chrome, Opera */
-}
+@import "variables";
+@import "mixins";
 
 body {
   background: $main-bg;
@@ -64,8 +47,8 @@ section {
   margin-top: 5rem;
 
   h1 {
-  font-size: 1.5rem;
-  margin: 1rem auto;
+    font-size: 1.5rem;
+    margin: 1rem auto;
   }
 }
 
@@ -74,9 +57,9 @@ article {
   width: 100%;
 
   h1 {
+    @include flex(2);
     font-size: 1rem;
     margin: 0.5rem auto;
-    @include flex(2);
     color: #0277BD;
   }
 
