@@ -5,6 +5,7 @@
 
 $serif: "Georgia", "Times New Roman", serif;
 $sans-serif: -apple-system, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+$monospace: "Inconsolata", "Menlo", monospace;
 $main-bg: #FFF;
 $main-fg: #666;
 $inline-bg: #F9FAFA;
@@ -163,8 +164,7 @@ img {
 }
 
 code {
-  font-family: "Inconsolata", "Menlo", monospace;
-  background-color: $inline-bg;
+  font-family: $monospace;
 }
 
 pre {
@@ -188,7 +188,7 @@ pre {
   .fun { color: #445E50; }  /* a function name */
 
 pre.prettyprint, code.prettyprint {
-  font-family: "Inconsolata", "Menlo", monospace;
+  font-family: $monospace;
   background: $inline-bg;
 }
 
