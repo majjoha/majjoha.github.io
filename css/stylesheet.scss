@@ -25,17 +25,16 @@ p {
 a {
   color: $light-blue;
   text-decoration: none;
+  transition: .4s;
 }
 
 a:hover {
   color: $blue;
   text-decoration: underline;
-  transition: .4s;
 }
 
 a:active {
   color: $dark-blue;
-  transition: .4s;
 }
 
 time {
