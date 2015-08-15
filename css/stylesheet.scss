@@ -23,12 +23,19 @@ p {
 }
 
 a {
-  color: #08c;
+  color: $light-blue;
   text-decoration: none;
 }
 
 a:hover {
+  color: $blue;
   text-decoration: underline;
+  transition: .4s;
+}
+
+a:active {
+  color: $dark-blue;
+  transition: .4s;
 }
 
 time {

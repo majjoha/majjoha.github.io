@@ -5,3 +5,7 @@ $monospace: "Inconsolata", "Menlo", monospace;
 $main-bg: #FFF;
 $main-fg: #666;
 $inline-bg: #F9FAFA;
+
+$light-blue: #08c;
+$blue: darken($light-blue, 10%);
+$dark-blue: darken($blue, 10%);
