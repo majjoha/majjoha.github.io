@@ -3,6 +3,7 @@ permalink: "/:year/:month/:day/:title"
 url: "http://mjj.io"
 markdown: redcarpet
 destination: public
+exclude: [vendor]
 sass:
   style: :compressed
   sass_dir: css
