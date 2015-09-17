@@ -7,9 +7,7 @@ IGNORE_LINKS = [
 
 task(:test) do
   sh "bundle exec jekyll build"
-  HTML::Proofer.new(
-    "./public",
-    href_ignore: IGNORE_LINKS).run
+  HTML::Proofer.new("./public", href_ignore: IGNORE_LINKS).run
 end
 
 task(default: :test)
