@@ -4,6 +4,7 @@
 @import "reset";
 @import "variables";
 @import "mixins";
+@import "syntax";
 
 body {
   background: $main-bg;
@@ -101,7 +102,6 @@ header {
   }
 }
 
-
 ul {
   margin: 1rem;
   list-style-type: disc;
@@ -172,62 +172,23 @@ kbd {
   box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #fff inset;
 }
 
-/* Priting code prettier, modified Sunburst theme by David Leibovic */
+@media only screen and (max-width: 400px) {
+  header {
+    display: inline-block;
+    width: 100%;
 
-  .str { color: #22624B; }  /* string content */
-  .kwd { color: #8C313B; }  /* a keyword */
-  .com { color: #666; }  /* a comment */
-  .typ { color: #926B33; }  /* a type name */
-  .lit { color: #4F6F46; }  /* a literal value */
-  .pln { color: #26435F; }
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #9E6F38; }
-  .tag { color: #26435F; }  /* a markup tag name */
-  .atn { color: #926B33; }  /* a markup attribute name */
-  .atv { color: #22624B; }  /* a markup attribute value */
-  .dec, .var { color: #606; }  /* a declaration; a variable name */
-  .fun { color: #445E50; }  /* a function name */
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 200;
+      padding-bottom: 1rem;
+    }
 
-pre.prettyprint, code.prettyprint {
-  font-family: $monospace;
-  background: $inline-bg;
-}
+    nav {
+      text-align: center;
 
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin-top: 0; margin-bottom: 0; color: #CCC; } /* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L5,
-li.L6,
-li.L7,
-li.L8 { }
-/* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 { }
-
-pre.prettyprint {
-    padding: 0.5em;
-    white-space: pre-wrap;
-    line-height: 1.5;
-}
-
-@media print {
-  .str { color: #22624B; }  /* string content */
-  .kwd { color: #8C313B; }  /* a keyword */
-  .com { color: #666; }  /* a comment */
-  .typ { color: #926B33; }  /* a type name */
-  .lit { color: #4F6F46; }  /* a literal value */
-  .pln { color: #26435F; }
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { color: #9E6F38; }
-  .tag { color: #26435F; }  /* a markup tag name */
-  .atn { color: #926B33; }  /* a markup attribute name */
-  .atv { color: #22624B; }  /* a markup attribute value */
-  .dec, .var { color: #606; }  /* a declaration; a variable name */
-  .fun { color: #445E50; }  /* a function name */
+      a {
+        padding: 1%;
+      }
+    }
+  }
 }

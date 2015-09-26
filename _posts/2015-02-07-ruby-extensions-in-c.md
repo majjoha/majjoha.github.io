@@ -12,28 +12,28 @@ call from Ruby.
 
 We start out by creating the relevant directories and files.
 
-<pre class="prettyprint">
+{% highlight bash %}
 $ mkdir fact
 $ cd fact
 $ mkdir ext
 $ touch ext/extconf.rb ext/fact.c
-</pre>
+{% endhighlight %}
 
 In the `ext/extconf.rb` file, we require the
 [`mkmf`](http://ruby-doc.org/stdlib-2.0.0/libdoc/mkmf/rdoc/MakeMakefile.html)
 module which allows us to generate an applicable Makefile that compiles our C
 code.
 
-<pre class="prettyprint">
+{% highlight ruby %}
 require "mkmf"
 
 create_makefile("fact")
-</pre>
+{% endhighlight %}
 
 Afterwards, we write the actual C program in the `ext/fact.c` file. It should
 look like this:
 
-<pre class="prettyprint">
+{% highlight c %}
 #include "ruby.h"
 
 void Init_fact();
@@ -56,7 +56,7 @@ VALUE fact(VALUE self, VALUE n)
 
   return INT2NUM(factorial);
 }
-</pre>
+{% endhighlight %}
 
 First, we include the `ruby.h` header file, so that we can access the necessary
 macros and functions. Ruby will by default execute our initializing function
@@ -73,7 +73,7 @@ returning the result.
 We can then compile our program, and open `irb` to verify that it works as
 expected:
 
-<pre class="prettyprint">
+{% highlight bash %}
 $ ruby ext/extconf.rb
 creating Makefile
 $ make
@@ -86,7 +86,7 @@ irb(main):002:0> include Fact
 => Object
 irb(main):003:0> fact(5)
 => 120
-</pre>
+{% endhighlight %}
 
 Utilizing C in our Ruby programs can be incredibly useful both in order to
 achieve higher performance for specific parts of our application, but also if we
