@@ -1,9 +1,7 @@
 ---
 ---
 
-@import "reset";
 @import "variables";
-@import "mixins";
 @import "syntax";
 
 body {
@@ -11,153 +9,99 @@ body {
   color: $main-fg;
   font-family: $serif;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-header, time, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, time, header, article {
   font-family: $sans-serif;
 }
 
-p {
+p, ul, ol {
   line-height: 1.8;
-  margin: auto auto 1rem auto;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+
+  max-width: 42rem;
+  margin: 1rem auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 100%;
+
+  h1 {
+    flex: 2;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    flex-direction: row;
+    align-self: center;
+  }
+}
+
+section {
+  flex: 1 100%;
+  margin-top: 2rem;
+}
+
+article {
+  display: flex;
+  max-height: 5.5vh;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #0277BD;
+    flex: 3;
+    align-self: center;
+  }
+
+  time {
+    align-self: center;
+  }
+}
+
+time {
+  color: #999;
 }
 
 a {
   color: $light-blue;
   text-decoration: none;
   transition: .4s;
-}
 
-a:hover {
-  color: $blue;
-  text-decoration: underline;
-}
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
 
-a:active {
-  color: $dark-blue;
-}
-
-time {
-  display: inline-block;
-  margin-bottom: 2rem;
-  color: #999;
-}
-
-main {
-  max-width: 42rem;
-  margin: 1rem auto;
-  padding: 1rem;
-}
-
-section {
-  margin-top: 5rem;
-
-  h1 {
-    font-size: 1.5rem;
-    margin: 1rem auto;
+  &:active {
+    color: $dark-blue;
   }
 }
 
-article {
-  @include display-flex();
-  width: 100%;
-
-  h1 {
-    @include flex(2);
-    font-size: 1rem;
-    margin: 0.5rem auto;
-    color: #0277BD;
-  }
-
-  time {
-    @include flex(1);
-    align-self: center;
-    margin: 0;
-
-    text-align: right;
-  }
-}
-
-header {
-  @include display-flex();
-  padding-bottom: 1rem;
-
-  h1 {
-    @include flex(1);
-    font-size: 1.5rem;
-    font-weight: 200;
-  }
-
-  nav {
-    @include flex(1);
-    align-self: center;
-    text-align: right;
-
-    a {
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-
-ul {
-  margin: 1rem;
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-ol {
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-  list-style-position: inside;
-  margin-left: 15px;
-}
-
-ol ol, ul ol {
-  list-style-type: lower-latin;
-  list-style-position: inside;
-  margin-left: 15px;
-}
-
-li {
-  line-height: 1.8;
-  display: list-item;
-}
-
-blockquote {
-  background: #fffaf0;
-  padding: 2rem;
-  font-style: italic;
-
-  em:before {
-    content: "\2014";
-  }
-
-  em {
-    font-family: $sans-serif;
-    font-style: normal;
-    padding-top: 1rem;
-    display: block;
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+pre {
+  font-size: 1rem;
 }
 
 code {
   font-family: $monospace;
 }
 
-pre {
-  margin: 1rem auto;
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 kbd {
@@ -172,23 +116,28 @@ kbd {
   box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #fff inset;
 }
 
-@media only screen and (max-width: 400px) {
-  header {
-    display: inline-block;
-    width: 100%;
+blockquote {
+  background: #fffaf0;
+  margin: 1rem 0;
+  font-style: italic;
+  padding: 2rem;
 
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 200;
-      padding-bottom: 1rem;
-    }
-
-    nav {
-      text-align: center;
-
-      a {
-        padding: 1%;
-      }
-    }
+  em:before {
+    content: "\2014";
   }
+
+  em {
+    font-family: $sans-serif;
+    font-style: normal;
+
+    padding-top: 1rem;
+    display: block;
+  }
+}
+
+/* Smaller screens */
+@media only screen and (max-width: 960px) {
+  header { display: inline; }
+  header h1 { flex: 1 100%; }
+  header nav { flex: 1 100%; }
 }
