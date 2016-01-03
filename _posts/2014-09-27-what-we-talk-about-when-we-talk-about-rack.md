@@ -5,7 +5,7 @@ date:   2014-09-27
 ---
 
 I was encouraged by [Jamie Hodge](https://twitter.com/jamiemhodge) to give a
-talk at this week's [Copenhagen Ruby Brigade](http://copenhagenrb.dk/) meetup
+talk at this week's [Copenhagen Ruby Brigade](http://www.copenhagenrb.dk/) meetup
 about Rack, and in this post, I'd like to give a recap on the subject.
 
 [Rack](https://github.com/rack/rack) is essentially a minimal web server
