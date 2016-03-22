@@ -5,5 +5,5 @@ group :test do
   gem "html-proofer"
 end
 
-gem "jekyll"
+gem "jekyll", github: "jekyll/jekyll"
 gem "jekyll-sitemap"
