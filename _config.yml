@@ -1,5 +1,5 @@
 name: Mathias Jean Johansen
-permalink: "/:year/:month/:day/:title"
+permalink: "/:year/:month/:day/:title/"
 url: "http://mjj.io"
 markdown: kramdown
 kramdown:

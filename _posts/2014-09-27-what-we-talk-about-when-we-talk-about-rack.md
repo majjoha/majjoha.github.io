@@ -11,13 +11,13 @@ about Rack, and in this post, I'd like to give a recap on the subject.
 [Rack](https://github.com/rack/rack) is essentially a minimal web server
 interface that [Rails](http://rubyonrails.org/),
 [Sinatra](http://www.sinatrarb.com/), [Lotus](http://lotusrb.org/),
-[Cuba](http://cuba.is/), [Camping](http://camping.io/) and friends all heavily
-rely on. They do so in order not to interact directly with the lower levels of
-the socket communication, and instead they distribute this particular work for
-Rack, so they can focus on other parts of the architecture. The main benefit of
-Rack is that you can write your applications once, and run them everywhere.
-Almost all Ruby servers support Rack, so you can easily power up your
-application without having to tailor it to a specific platform.
+[Cuba](http://cuba.is/), [Camping](https://github.com/camping/camping) and
+friends all heavily rely on. They do so in order not to interact directly with
+the lower levels of the socket communication, and instead they distribute this
+particular work for Rack, so they can focus on other parts of the architecture.
+The main benefit of Rack is that you can write your applications once, and run
+them everywhere.  Almost all Ruby servers support Rack, so you can easily power
+up your application without having to tailor it to a specific platform.
 
 A Rack application is basically an object that responds to `#call`, accepts
 `env` as its only argument and returns an array containing the HTTP status code,
