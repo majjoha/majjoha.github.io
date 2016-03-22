@@ -1,7 +1,9 @@
 name: Mathias Jean Johansen
 permalink: "/:year/:month/:day/:title"
 url: "http://mjj.io"
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
 destination: public
 exclude: [vendor]
 sass:

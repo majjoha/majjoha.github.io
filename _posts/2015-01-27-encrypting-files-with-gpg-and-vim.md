@@ -27,7 +27,7 @@ expose our file contents, so instead we are going to rely on
 
 What we need to include in our `.vimrc` is the following autocommand group:
 
-{% highlight vim %}
+```viml
 augroup encrypted
   autocmd!
   autocmd BufReadPre,FileReadPre *.gpg set viminfo=
@@ -36,8 +36,7 @@ augroup encrypted
   autocmd BufWritePre *.gpg :%!gpg -ae --default-recipient-self
   autocmd BufWritePost *.gpg u
 augroup END
-
-{% endhighlight %}
+```
 
 Essentially, we disable auto-saving the `.viminfo` file, and then we disable
 swap files, undo files and backup files. After the buffer is read, we decrypt

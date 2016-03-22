@@ -30,7 +30,7 @@ transferred, so TCP sockets are considered very reliable.
 Implementing a small single-threaded web server that prints the current time to
 the user could be done this way utilizing the `TCPServer`.
 
-{% highlight ruby %}
+```ruby
 require 'socket'
 
 server = TCPServer.new('localhost', 2345)
@@ -41,7 +41,7 @@ loop do
   client.puts "Time is #{Time.now}"
   client.close
 end
-{% endhighlight %}
+```
 
 Accessing [http://localhost:2345](http://localhost:2345) in the browser would
 then return the current time to the user.  This is actually what I started out
@@ -64,7 +64,7 @@ when implementing a web framework without Rack.
 Implementing a simple chat server and client using `UDPSocket` could be done the
 following way:
 
-{% highlight ruby %}
+```ruby
 # udp-server.rb
 require 'socket'
 
@@ -77,9 +77,9 @@ loop do
 end
 
 socket.close
-{% endhighlight %}
+```
 
-{% highlight ruby %}
+```ruby
 # udp-client.rb
 require 'socket'
 
@@ -90,7 +90,7 @@ while message = gets.chomp
 end
 
 socket.close
-{% endhighlight %}
+```
 
 The server creates a new `UDPSocket` and binds it to localhost on port 3333.
 From here, it will simply run a loop listening for messages and print them.  The
@@ -112,12 +112,12 @@ Finally, the `IPSocket` which is also the superclass of `TCPSocket` and
 leverage, but one common usage for the `IPSocket` is looking up the IP address
 of the host which we could do in the following way:
 
-{% highlight ruby %}
+```ruby
 require 'socket'
 
 ip = IPSocket.getaddress(Socket.gethostname)
 puts ip #=> "192.168.0.100"
-{% endhighlight %}
+```
 
 Investigating sockets have been an interesting journey so far, and I'll
 certainly need to investigate them even more for this project in particular. I

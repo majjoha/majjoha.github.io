@@ -25,20 +25,20 @@ the headers and an object that responds to `#each`. Using a stabby lambda, a
 simple Rack application printing "Hello, world" to its users could look like
 this:
 
-{% highlight ruby %}
+```ruby
 require 'rack'
 app = ->(env) do
   [200, {"Content-type" => "text/html"}, ["<h1>Hello, world!</h1>"]]
 end
 Rack::Server.start(app: app)
-{% endhighlight %}
+```
 
 At some point, we probably want to extract our logic into its own class. This is
 quite manageable to do, since we simply need an object that responds to `#call`
 and takes `env` as its only argument. We could for instance end up with the
 following:
 
-{% highlight ruby %}
+```ruby
 require 'rack'
 class SuperAdvancedWebApp
   def call(env)
@@ -46,7 +46,7 @@ class SuperAdvancedWebApp
   end
 end
 Rack::Server.start(app: SuperAdvancedWebApp.new)
-{% endhighlight %}
+```
 
 Except from being extracted into a class, the aforementioned application is
 slightly different in that it actually returns the result of the `env` to its
@@ -81,7 +81,7 @@ applications. In the repository,
 thoughts about Rack 2.0, and according to the examples in the project, it'll
 slightly change how we use Rack to build our web applications:
 
-{% highlight ruby %}
+```ruby
 class Application
   def call req, res
     res.write_head 200, 'Content-Type' => 'text/plain'
@@ -92,7 +92,7 @@ end
 require 'the_metal/puma'
 server = TheMetal.create_server Application.new
 server.listen 9292, '0.0.0.0'
-{% endhighlight %}
+```
 
 I highly welcome the change, and I find this new way of interacting with the
 request and response directly much more elegant than fiddling with the `env`
