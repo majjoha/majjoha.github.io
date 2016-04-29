@@ -25,7 +25,8 @@ main {
   flex-flow: row wrap;
 
   max-width: 42rem;
-  margin: 1rem auto;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 header {
@@ -64,6 +65,11 @@ article {
     color: #0277BD;
     flex: 3;
     align-self: center;
+    width: 1rem;
+    margin-right: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   time {
