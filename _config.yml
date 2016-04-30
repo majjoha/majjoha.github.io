@@ -7,8 +7,5 @@ kramdown:
   input: GFM
 destination: public
 exclude: [vendor]
-sass:
-  style: :compressed
-  sass_dir: css
 gems:
   - jekyll-sitemap
