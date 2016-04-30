@@ -5,6 +5,9 @@ url: "http://mjj.io"
 markdown: kramdown
 kramdown:
   input: GFM
+sass:
+  style: :compressed
+  sass_dir: .
 destination: public
 exclude: [vendor]
 gems:
