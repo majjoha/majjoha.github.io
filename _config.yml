@@ -1,7 +1,7 @@
 name: Mathias Jean Johansen
 email: mathias@mjj.io
 permalink: "/:year/:month/:day/:title/"
-url: "http://mjj.io"
+url: "https://mjj.io"
 markdown: kramdown
 kramdown:
   input: GFM
