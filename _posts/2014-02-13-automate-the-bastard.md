@@ -27,7 +27,7 @@ Furthermore, this repository also installs all of my
 use to configure zsh, Git, Vim and so on.
 
 Because of the great [Homebrew package manager](http://brew.sh/), it is
-incredibly easy to setup most apps, but, unfortunately, Homebrew does not
+incredibly easy to set up most apps, but, unfortunately, Homebrew does not
 support regular apps with a graphical user interface out of the box, so instead
 I use [homebrew-cask](https://github.com/phinze/homebrew-cask) for this.  By
 combining the power of both Homebrew and homebrew-cask, I can easily setup a
