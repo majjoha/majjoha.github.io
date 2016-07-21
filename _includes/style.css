@@ -52,6 +52,7 @@ section {
 article {
   display: flex;
   max-height: 5.5vh;
+  min-height: 2rem;
 }
 
 article h1 {
