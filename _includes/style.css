@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, time, header, article {
-  font-family: -apple-system, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
 }
 
 p, ul, ol {
@@ -106,7 +106,7 @@ img {
 }
 
 kbd {
-  font-family: -apple-system, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.8rem;
   line-height: 1.8;
   white-space: nowrap;
@@ -129,7 +129,7 @@ blockquote em:before {
 }
 
 blockquote em {
-  font-family: -apple-system, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   padding-top: 1rem;
   display: block;
