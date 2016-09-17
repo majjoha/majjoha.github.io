@@ -1,8 +1,14 @@
+image: ruby:2.3
+cache:
+  key: "jekyll"
+  paths:
+    - vendor
+before_script:
+  - ruby -v
+  - bundle install --jobs $(nproc) --path vendor
 pages:
   stage: deploy
-  image: ruby:2.3
   script:
-    - gem install jekyll
     - jekyll build -d public/
   artifacts:
     paths:
