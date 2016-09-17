@@ -1,4 +1,4 @@
-require "html/proofer"
+require "html-proofer"
 
 IGNORE_LINKS = [
   "http://localhost:2345",
@@ -7,7 +7,7 @@ IGNORE_LINKS = [
 
 task(:test) do
   sh "bundle exec jekyll build"
-  HTML::Proofer.new("./public", href_ignore: IGNORE_LINKS).run
+  HTMLProofer.check_directory("./public", url_ignore: IGNORE_LINKS).run
 end
 
 task(default: :test)
