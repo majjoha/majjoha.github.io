@@ -8,6 +8,7 @@ layout: default
     <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
       {{ page.date | date: "%A, %B %d, %Y" }}
     </time>
+    <time><a href="{{ page.url }}" title="Permalink" class="permalink">&infin;</a></time>
   {% endif %}
 
   <div itemprop="articleBody">
