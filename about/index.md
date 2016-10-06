@@ -3,18 +3,18 @@ layout: post
 title: "About"
 ---
 
-My name is Mathias Jean Johansen. I work as a Software Engineer at
-[Zendesk](https://zendesk.com) in [Copenhagen,
-Denmark](https://goo.gl/maps/KnZnt).
+My name is Mathias Jean Johansen. I currently live in [Copenhagen,
+Denmark](https://goo.gl/maps/KnZnt) where I write software for a living.
 
-I find the numerous facets of the web, programming languages, and open source
-software immensely compelling.
+I've a penchant for the web, esoteric, hobby programming languages, open source
+software, and computer and Internet history.
 
-When I am not writing code, I enjoy <a
-href="https://www.goodreads.com/user/show/22173445-mathias"
-rel="me">reading</a>, and <a href="http://www.last.fm/user/bouleau"
-rel="me">listening to music</a>.
+When I am not writing code, I enjoy traveling,
+[reading](https://www.goodreads.com/user/show/22173445-mathias), playing and
+[listening](http://www.last.fm/user/bouleau) to music.
 
-You can reach me via [mail](mailto:mathias@mjj.io), <a
-href="https://twitter.com/majjoha" rel="me">Twitter</a>, or <a
-href="http://linkedin.com/in/majjoha" rel="me">LinkedIn</a>.
+You can reach me via [email](mailto:mathias@mjj.io)
+([GPG](https://keybase.io/majjoha/key.asc)),
+[Twitter](https://twitter.com/majjoha), or
+[LinkedIn](http://linkedin.com/in/majjoha). I can also often be found idling on
+[`irc.freenode.net`](irc://irc.freenode.net/majjoha,isnick) as `majjoha`.
