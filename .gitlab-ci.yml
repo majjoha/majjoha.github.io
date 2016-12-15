@@ -10,7 +10,7 @@ pages:
   stage: deploy
   script:
     - jekyll build -d public/
-    - cp ./public/.well-known/acme-challenge/_LmofHPfnTNF-CZfW3VV1om989ze2LOmumxDz_hmfDc.html ./public/.well-known/acme-challenge/_LmofHPfnTNF-CZfW3VV1om989ze2LOmumxDz_hmfDc
+    - cp ./public/.well-known/acme-challenge/MVXWKpoKm-l9AEujJSgnibVlYlcMJdF0G6Yh2YTSzSA.html ./public/.well-known/acme-challenge/MVXWKpoKm-l9AEujJSgnibVlYlcMJdF0G6Yh2YTSzSA
   artifacts:
     paths:
       - public
