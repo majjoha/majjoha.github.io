@@ -146,6 +146,7 @@ blockquote em {
   padding: 0.5rem 1rem;
   margin: 1rem auto;
   word-wrap: break-word;
+  max-width: 42rem;
   line-height: 1.5;
 }
 
