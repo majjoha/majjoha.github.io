@@ -7,7 +7,7 @@ date:   2014-01-19
 I spend many hours daily in Vim, and I've grown extremely fond of the way I can
 easily navigate things with <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, and
 <kbd>l</kbd>. This have also led me to download and use the [Vimium
-plugin](http://vimium.github.io/) for Chrome quite extensively.  The Vimium
+plugin](http://vimium.github.io/) for Chrome quite extensively. The Vimium
 plugin is so good that I rarely have to touch my Magic Trackpad anymore.
 
 There is one problem, however. I tend to spend a fair amount of time reading

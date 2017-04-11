@@ -52,7 +52,7 @@ process reveals how much work Rack actually does for you, but I enjoy seeing how
 much I can do without it as well.
 
 Moving on to UDP, this protocol, on the other hand, is considered unreliable,
-but it offers speed why it is often used for streaming purposes.  Also, UDP
+but it offers speed why it is often used for streaming purposes. Also, UDP
 packets are remarkably smaller than TCP packets. Unlike TCP, UDP does not
 provide any error correction or flow control, so errors will be present.
 
