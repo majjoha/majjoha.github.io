@@ -34,7 +34,7 @@ end
 ```
 
 We can now evaluate our `Proc` by running `curried_f[1][2][3]` which would
-evluate to 6 exactly as in our previous example.
+evaluate to 6 exactly as in our previous example.
 
 The ingenious reader have probably already guessed that `#curry` will take our
 original `f` and turn it into `curried_f`. We can curry `f` in the following way
