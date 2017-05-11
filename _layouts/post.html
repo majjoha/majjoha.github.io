@@ -2,16 +2,12 @@
 layout: default
 ---
 
-<div itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 itemprop="headline">{{ page.title }}</h1>
-  {% if page.date %}
-    <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%A, %B %d, %Y" }}
-    </time>
-    <time><a href="{{ page.url }}" title="Permalink" class="permalink">&infin;</a></time>
-  {% endif %}
+<h1>{{ page.title }}</h1>
+{% if page.date %}
+  <time datetime="{{ page.date | date_to_xmlschema }}">
+    {{ page.date | date: "%A, %B %d, %Y" }}
+  </time>
+  <a href="{{ page.url }}" title="Permalink" class="permalink">&infin;</a>
+{% endif %}
 
-  <div itemprop="articleBody">
-    {{ content }}
-  </div>
-</div>
+{{ content }}
