@@ -1,13 +1,16 @@
 body {
   background: #FFF;
-  color: #666;
+  color: #4D4D4D;
   font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6, time, header, article {
+h1, h2, h3, h4, h5, h6, time, header, article, .permalink {
   font-family: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+
 }
 
 p, ul, ol {
@@ -31,13 +34,13 @@ header {
 
 header h1 {
   flex: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: normal;
 }
 
 header nav {
   display: flex;
-  flex: 1.2;
+  flex: 1.0;
   justify-content: space-between;
 
   flex-direction: row;
@@ -51,14 +54,13 @@ section {
 
 article {
   display: flex;
-  max-height: 5.5vh;
-  min-height: 2rem;
+  max-height: 2.5rem;
 }
 
 article h1 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: normal;
-  color: #0277BD;
+  color: #4D4D4D;
   flex: 3;
   align-self: center;
   width: 1rem;
@@ -73,7 +75,7 @@ article time {
 }
 
 time {
-  color: #999;
+  color: #888;
 }
 
 time a:hover {
@@ -87,16 +89,16 @@ a {
 }
 
 a:hover {
-  color: #069;
+  color: #006FB3;
   text-decoration: underline;
 }
 
 a:active {
-  color: #046;
+  color: #059;
 }
 
 pre {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 code {
@@ -111,7 +113,7 @@ img {
 
 kbd {
   font-family: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.8;
   white-space: nowrap;
   padding: 0.1rem 0.6rem;
@@ -123,9 +125,10 @@ kbd {
 
 blockquote {
   background: #fffaf0;
-  margin: 1rem 0;
   font-style: italic;
-  padding: 2rem;
+  line-height: 1.5;
+  margin: 1rem auto;
+  padding: 0.25rem 1rem;
 }
 
 blockquote em:before {
@@ -133,15 +136,31 @@ blockquote em:before {
 }
 
 blockquote em {
-  font-family: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
-  font-style: normal;
-  padding-top: 1rem;
   display: block;
+}
+
+.permalink:hover {
+  text-decoration: none;
+}
+
+.me {
+  background: repeat -3vw 2vh/12vw auto url(/images/me.png);
+  border-image: url(/images/me-border.png) 5% 5% repeat;
+  border-style: solid;
+  border-width: 0.8rem 0 0 0.8rem;
+  min-height: 23vh;
+  margin: auto auto;
+  display: block;
+}
+
+.me:hover {
+  background: repeat -3vw 2vh/12vw auto url(/images/me-loop.gif);
+  border-image: url(/images/me-border-loop.gif) 5% 5% repeat;
 }
 
 .highlight  {
   font-family: "Source Code Pro", "Menlo", monospace;
-  background: #F9FAFA;
+  background: #F7F7FC;
   box-sizing: border-box;
   padding: 0.5rem 1rem;
   margin: 1rem auto;
@@ -156,10 +175,10 @@ blockquote em {
 .highlight .gi { color: #9E6F38 } /* Generic.Inserted */
 .highlight .gd { color: #26435F } /* Generic.Deleted */
 .highlight .gu { color: #926B33 } /* Generic.Subheading */
-.highlight .gh { color: #666 } /* Generic.Heading */
+.highlight .gh { color: #4D4D4D } /* Generic.Heading */
 
-.highlight .w { color: #666 } /* Text.Whitespace */
-.highlight .p { color: #666 } /* Punctuation */
+.highlight .w { color: #4D4D4D } /* Text.Whitespace */
+.highlight .p { color: #4D4D4D } /* Punctuation */
 
 .highlight .c { color: #22624B } /* Comment */
 .highlight .cm { color: #22624B } /* Comment.Multiline */
@@ -186,12 +205,12 @@ blockquote em {
 .highlight .na { color: #926B33 } /* Name.Attribute */
 .highlight .nf { color: #926B33 } /* Name.Function */
 .highlight .nx { color: #926B33 } /* Name.Other */
-.highlight .nl { color: #666 } /* Name.Label */
-.highlight .nb { color: #666 } /* Name.Builtin */
-.highlight .ni { color: #666 } /* Name.Entity */
-.highlight .py { color: #666 } /* Name.Property */
-.highlight .bp { color: #666 } /* Name.Builtin.Pseudo */
-.highlight .n { color: #666 } /* Name */
+.highlight .nl { color: #4D4D4D } /* Name.Label */
+.highlight .nb { color: #4D4D4D } /* Name.Builtin */
+.highlight .ni { color: #4D4D4D } /* Name.Entity */
+.highlight .py { color: #4D4D4D } /* Name.Property */
+.highlight .bp { color: #4D4D4D } /* Name.Builtin.Pseudo */
+.highlight .n { color: #4D4D4D } /* Name */
 
 .highlight .k { color: #4F6F46 } /* Keyword */
 .highlight .kc { color: #4F6F46 } /* Keyword.Constant */
@@ -219,7 +238,7 @@ blockquote em {
 .highlight .sr { color: #445E50 } /* Literal.String.Regex */
 .highlight .s1 { color: #445E50 } /* Literal.String.Single */
 .highlight .ss { color: #445E50 } /* Literal.String.Symbol */
-.highlight .sc { color: #666 } /* Literal.String.Char */
+.highlight .sc { color: #4D4D4D } /* Literal.String.Char */
 
 /* Smaller screens */
 @media only screen and (max-width: 960px) {
