@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }} ({{ page.year }})</h1>
+<a href="{{ page.image }}"><img src="{{ page.image }}" alt={{ page.title }}></a>
+
+{% if page.inactive %}
+<blockquote>
+  This project is currently inactive due to either completion, or lack of time.
+</blockquote>
+{% endif %}
+
+{{ content }}
