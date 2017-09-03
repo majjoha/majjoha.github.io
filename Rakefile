@@ -7,7 +7,11 @@ IGNORE_LINKS = [
 
 task(:test) do
   sh "bundle exec jekyll build"
-  HTMLProofer.check_directory("./public", url_ignore: IGNORE_LINKS).run
+  HTMLProofer.check_directory(
+    "./public",
+    url_ignore: IGNORE_LINKS,
+    assume_extension: true
+  ).run
 end
 
 task(default: :test)
