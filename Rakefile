@@ -2,7 +2,9 @@ require "html-proofer"
 
 IGNORE_LINKS = [
   "http://localhost:2345",
-  "http://linkedin.com/in/majjoha"
+  "http://linkedin.com/in/majjoha",
+  "https://www.react-europe.org",
+  "https://elixir-lang.org"
 ]
 
 task(:test) do
