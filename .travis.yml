@@ -7,5 +7,3 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 sudo: required
-before_install:
-  - sudo update-ca-certificates
