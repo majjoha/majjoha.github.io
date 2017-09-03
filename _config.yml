@@ -15,4 +15,4 @@ gems:
 collections:
   projects:
     output: true
-    permalink: /portfolio/:name
+    permalink: "/portfolio/:name/"
