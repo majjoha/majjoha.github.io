@@ -170,6 +170,28 @@ blockquote em {
   line-height: 1.5;
 }
 
+.webgl-content .footer {
+  margin-top: 5px;
+  height: 38px;
+  line-height: 38px;
+}
+
+.webgl-content .footer .webgl-logo, .fullscreen {
+  height: 100%;
+  display: inline-block;
+}
+
+.webgl-content .footer .fullscreen {
+  background-image: url("/images/fullscreen.png");
+  width: 38px;
+  float: right;
+}
+
+#game-container {
+  width: 100%;
+  height: auto;
+}
+
 .highlight .ge {} /* Generic.Emph */
 .highlight .gs {} /* Generic.Strong */
 .highlight .gp { color: #22624B } /* Generic.Prompt */
