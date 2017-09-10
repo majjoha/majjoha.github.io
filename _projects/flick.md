@@ -60,7 +60,7 @@ of the game. Briefly described, these iterations were:
 
 ### Reflections 
 As with many games, Flick has weaknesses too. The most important one is that the
-game is entirely based around skills, and it contains no random elements.
+game is entirely based on skills, and it contains no random elements.
 Consequently, the game will not create a lot of tension if the prowess of the
 two teams vastly differs. Once a team is far ahead, there is a little the other
 team can do to catch up. Since the goal of the game is to reach the end of the
