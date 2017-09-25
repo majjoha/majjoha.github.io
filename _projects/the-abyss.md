@@ -3,6 +3,7 @@ layout: project
 title: "The Abyss"
 image: "/images/the-abyss.png"
 year: 2017
+date: 2017-09-11
 tag: "Game Prototypes"
 ---
 

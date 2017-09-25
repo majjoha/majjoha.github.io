@@ -3,6 +3,7 @@ layout: project
 title: "Flick"
 image: "/images/flick.png"
 year: 2017
+date: 2017-09-04
 tag: "Game Prototypes"
 ---
 
