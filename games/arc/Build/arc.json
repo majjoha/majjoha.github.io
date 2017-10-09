@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "arc.data.unityweb",
+"asmCodeUrl": "arc.asm.code.unityweb",
+"asmMemoryUrl": "arc.asm.memory.unityweb",
+"asmFrameworkUrl": "arc.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
