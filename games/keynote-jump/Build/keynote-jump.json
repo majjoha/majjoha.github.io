@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "keynote-jump.data.unityweb",
+"asmCodeUrl": "keynote-jump.asm.code.unityweb",
+"asmMemoryUrl": "keynote-jump.asm.memory.unityweb",
+"asmFrameworkUrl": "keynote-jump.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
