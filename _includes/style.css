@@ -33,7 +33,7 @@ header {
 }
 
 header h1 {
-  flex: 1.5;
+  flex: 1.85;
   font-size: 1.6rem;
   font-weight: normal;
 }
@@ -168,28 +168,6 @@ blockquote em {
   word-wrap: break-word;
   max-width: 42rem;
   line-height: 1.5;
-}
-
-.webgl-content .footer {
-  margin-top: 5px;
-  height: 38px;
-  line-height: 38px;
-}
-
-.webgl-content .footer .webgl-logo, .fullscreen {
-  height: 100%;
-  display: inline-block;
-}
-
-.webgl-content .footer .fullscreen {
-  background-image: url("/images/fullscreen.png");
-  width: 38px;
-  float: right;
-}
-
-#game-container {
-  width: 100%;
-  height: auto;
 }
 
 .highlight .ge {} /* Generic.Emph */

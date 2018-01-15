@@ -12,7 +12,3 @@ destination: public
 exclude: [vendor]
 gems:
   - jekyll-sitemap
-collections:
-  projects:
-    output: true
-    permalink: "/portfolio/:name/"

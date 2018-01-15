@@ -1,9 +1,0 @@
-{
-"TOTAL_MEMORY": 268435456,
-"dataUrl": "advanced-chess.data.unityweb",
-"asmCodeUrl": "advanced-chess.asm.code.unityweb",
-"asmMemoryUrl": "advanced-chess.asm.memory.unityweb",
-"asmFrameworkUrl": "advanced-chess.asm.framework.unityweb",
-"splashScreenStyle": "Dark",
-"backgroundColor": "#231F20"
-}
