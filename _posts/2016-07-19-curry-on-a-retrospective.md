@@ -25,7 +25,7 @@ Facebook, and Mozilla have benefited from research with
 respectively. It is projects like these that demonstrate how cooperation between
 the industry, and academia can truly lead to advancements in our field.
 
-I also found [Crista Lopes](https://twitter.com/cristalopes) presentation on
+I also found [Crista Lopes](https://twitter.com/cristalopes)'s presentation on
 [Exercises in Programming
 Style](http://curry-on.org/2016/sessions/exercises-in-programming-style.html)
 extremely entertaining. In the presentation, she essentially went through a
