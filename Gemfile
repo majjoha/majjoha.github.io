@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 group :test do
@@ -5,5 +7,5 @@ group :test do
 end
 
 gem "rake"
-gem "jekyll", github: "jekyll/jekyll"
+gem "jekyll"
 gem "jekyll-sitemap"
