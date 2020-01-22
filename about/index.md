@@ -4,13 +4,13 @@ title: "About"
 ---
 
 My name is Mathias Jean Johansen. I live in [Copenhagen,
-Denmark](https://osm.org/go/0NWvCr9--) where I am currently pursuing a master's
-degree in Games at the [IT University of Copenhagen](https://en.itu.dk).
+Denmark](https://en.m.wikipedia.org/wiki/Copenhagen) where I also obtained my
+master's degree in Games from the [IT University of
+Copenhagen](https://en.itu.dk).
 
-I've a penchant for the web, esoteric, hobby programming languages, and [open
-source software](https://github.com/majjoha). When I am not writing code, I
-enjoy traveling, reading books, playing and listening to music.
+I have a penchant for the web, unconventional computing, and [open source
+software](https://github.com/majjoha). When I am not writing code, I enjoy
+traveling, reading books, playing and listening to music.
 
-If you want to get in touch, you can reach me via [email](mailto:mathias@mjj.io)
-([GPG](https://keybase.io/majjoha/key.asc)), or
-[Twitter](https://twitter.com/majjoha).
+If you want to get in touch, you can reach me via
+[email](mailto:mathias@mjj.io), or [Twitter](https://twitter.com/majjoha).
