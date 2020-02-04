@@ -109,6 +109,11 @@ kbd {
   border: 1px solid #CCC;
   border-radius: 0.3rem;
   box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #FFF inset;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 blockquote {
