@@ -14,6 +14,7 @@ p, ul, ol {
 a {
   color: #5F5F5F;
   transition: .4s;
+  -webkit-backface-visibility: hidden;
 }
 
 a:hover {
