@@ -1,24 +1,21 @@
 body {
-  background: #FFF;
-  color: #5F5F5F;
-  font: 1.1rem -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
+  background: #fff;
+  color: #5f5f5f;
+  font: 1.1rem/1.8 -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light",
+    "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-p, ul, ol {
-  line-height: 1.8;
-}
-
 a {
-  color: #5F5F5F;
-  transition: .4s;
+  color: #5f5f5f;
+  transition: 0.4s;
   -webkit-backface-visibility: hidden;
 }
 
 a:hover {
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 code {
@@ -33,14 +30,14 @@ img {
 }
 
 kbd {
-  font: 0.9rem -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.8;
+  font: 0.9rem -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light",
+    "Helvetica Neue", Arial, sans-serif;
   white-space: nowrap;
   padding: 0.1rem 0.6rem;
   margin: 0 0.1rem;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 0.3rem;
-  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #FFF inset;
+  box-shadow: 0 0.1rem 0 rgba(0, 0, 0, 0.2), 0 0 0 0.2rem #fff inset;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -49,9 +46,8 @@ kbd {
 }
 
 blockquote {
-  background: #FBFBFB;
+  background: #fbfbfb;
   font-style: italic;
-  line-height: 1.8;
   margin: 1.5rem auto;
   padding: 0.25rem 1rem;
 }
@@ -92,7 +88,8 @@ header nav {
   align-self: center;
 }
 
-header nav a, article a {
+header nav a,
+article a {
   text-decoration: none;
 }
 
@@ -137,13 +134,13 @@ article time {
   border-image: url(/images/me-border-loop.gif) 5% 5% repeat;
 }
 
-.highlight  {
+.highlight {
   overflow-wrap: break-word;
   word-wrap: break-word;
   font-family: "Fira Mono", "Menlo", monospace;
-  background: #FBFBFB;
+  background: #fbfbfb;
   box-sizing: border-box;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   margin: 1rem auto;
   max-width: 42rem;
   line-height: 1.5;
@@ -153,23 +150,27 @@ pre {
   white-space: pre-wrap;
 }
 
-.highlight .ge {} /* Generic.Emph */
-.highlight .gs {} /* Generic.Strong */
-.highlight .gp { color: #22624B } /* Generic.Prompt */
+.highlight .ge {
+} /* Generic.Emph */
+.highlight .gs {
+} /* Generic.Strong */
 
+.highlight .gp, /* Generic.Prompt */
 .highlight .c, /* Comment */
 .highlight .cm, /* Comment.Multiline */
 .highlight .cp, /* Comment.Preproc */
 .highlight .c1, /* Comment.Single */
 .highlight .cs, /* Comment.Special */
-.highlight .sd { /* Literal.String.Doc */
-  color: #22624B
+.highlight .sd {
+  /* Literal.String.Doc */
+  color: #22624b;
 }
 
 .highlight .gi, /* Generic.Inserted */
 .highlight .ld, /* Literal.Date */
-.highlight .s { /* Literal.String */
-  color: #9E6F38
+.highlight .s {
+  /* Literal.String */
+  color: #9e6f38;
 }
 
 .highlight .gd, /* Generic.Deleted */
@@ -178,8 +179,9 @@ pre {
 .highlight .no, /* Name.Constant */
 .highlight .nv, /* Name.Variable */
 .highlight .vc, /* Name.Variable.Class */
-.highlight .vg { /* Name.Variable.Global */
-  color: #26435F
+.highlight .vg {
+  /* Name.Variable.Global */
+  color: #26435f;
 }
 
 .highlight .gh, /* Generic.Heading */
@@ -191,8 +193,9 @@ pre {
 .highlight .py, /* Name.Property */
 .highlight .bp, /* Name.Builtin.Pseudo */
 .highlight .n, /* Name */
-.highlight .sc { /* Literal.String.Char */
-  color: #5F5F5F
+.highlight .sc {
+  /* Literal.String.Char */
+  color: #5f5f5f;
 }
 
 .highlight .gu, /* Generic.Subheading */
@@ -203,21 +206,24 @@ pre {
 .highlight .nx, /* Name.Other */
 .highlight .kn, /* Keyword.Namespace */
 .highlight .o, /* Operator */
-.highlight .ow { /* Operator.Word */
-  color: #926B33
+.highlight .ow {
+  /* Operator.Word */
+  color: #926b33;
 }
 
 .highlight .nc, /* Name.Class */
 .highlight .kt, /* Keyword.Type */
-.highlight .nn { /* Name.Namespace */
-  color: #8C313B
+.highlight .nn {
+  /* Name.Namespace */
+  color: #8c313b;
 }
 
 .highlight .k, /* Keyword */
 .highlight .kc, /* Keyword.Constant */
 .highlight .kd, /* Keyword.Declaration */
-.highlight .kr { /* Keyword.Reserved */
-  color: #4F6F46
+.highlight .kr {
+  /* Keyword.Reserved */
+  color: #4f6f46;
 }
 
 .highlight .mf, /* Literal.Number.Float */
@@ -235,12 +241,19 @@ pre {
 .highlight .sx, /* Literal.String.Other */
 .highlight .sr, /* Literal.String.Regex */
 .highlight .s1, /* Literal.String.Single */
-.highlight .ss { /* Literal.String.Symbol */
-  color: #445E50
+.highlight .ss {
+  /* Literal.String.Symbol */
+  color: #445e50;
 }
 
 /* Smaller screens */
 @media only screen and (max-width: 960px) {
-  header { display: inline; }
-  main { padding: 0.5rem; display: block; }
+  header {
+    display: inline;
+  }
+
+  main {
+    padding: 0.5rem;
+    display: block;
+  }
 }
