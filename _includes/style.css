@@ -28,7 +28,7 @@ a:hover {
 }
 
 code {
-  font-family: "Fira Mono", "Menlo", monospace;
+  font-family: "Fira Code", "Menlo", monospace;
 }
 
 img {
@@ -102,6 +102,10 @@ article a {
   text-decoration: none;
 }
 
+header nav a:hover {
+  text-decoration: underline;
+}
+
 section {
   flex: 1 100%;
   margin-top: 1rem;
@@ -152,7 +156,7 @@ article time {
 .highlight {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  font-family: "Fira Mono", "Menlo", monospace;
+  font-family: "Fira Code", "Menlo", monospace;
   background: #fbfbfb;
   box-sizing: border-box;
   padding: 0.25rem 0.5rem;
@@ -165,100 +169,90 @@ pre {
   white-space: pre-wrap;
 }
 
-.highlight .ge {
-} /* Generic.Emph */
-.highlight .gs {
-} /* Generic.Strong */
-
-.highlight .gp, /* Generic.Prompt */
-.highlight .c, /* Comment */
-.highlight .cm, /* Comment.Multiline */
-.highlight .cp, /* Comment.Preproc */
-.highlight .c1, /* Comment.Single */
-.highlight .cs, /* Comment.Special */
-.highlight .sd {
-  /* Literal.String.Doc */
-  color: #22624b;
-}
-
-.highlight .gi, /* Generic.Inserted */
-.highlight .ld, /* Literal.Date */
-.highlight .s {
-  /* Literal.String */
-  color: #9e6f38;
-}
-
-.highlight .gd, /* Generic.Deleted */
-.highlight .err, /* Error */
-.highlight .ne, /* Name.Exception */
-.highlight .no, /* Name.Constant */
-.highlight .nv, /* Name.Variable */
-.highlight .vc, /* Name.Variable.Class */
-.highlight .vg {
-  /* Name.Variable.Global */
-  color: #26435f;
-}
-
-.highlight .gh, /* Generic.Heading */
-.highlight .w, /* Text.Whitespace */
-.highlight .p, /* Punctuation */
-.highlight .nl, /* Name.Label */
-.highlight .nb, /* Name.Builtin */
-.highlight .ni, /* Name.Entity */
-.highlight .py, /* Name.Property */
-.highlight .bp, /* Name.Builtin.Pseudo */
-.highlight .n, /* Name */
-.highlight .sc {
-  /* Literal.String.Char */
+.highlight,
+.highlight .o,
+.highlight .ow,
+.highlight .p,
+.highlight .pi,
+.highlight .w {
   color: #5f5f5f;
 }
 
-.highlight .gu, /* Generic.Subheading */
-.highlight .nd, /* Name.Decorator */
-.highlight .nt, /* Name.Tag */
-.highlight .na, /* Name.Attribute */
-.highlight .nf, /* Name.Function */
-.highlight .nx, /* Name.Other */
-.highlight .kn, /* Keyword.Namespace */
-.highlight .o, /* Operator */
-.highlight .ow {
-  /* Operator.Word */
-  color: #926b33;
+.highlight .err {
+  color: #fff;
 }
 
-.highlight .nc, /* Name.Class */
-.highlight .kt, /* Keyword.Type */
-.highlight .nn {
-  /* Name.Namespace */
-  color: #8c313b;
+.highlight .c,
+.highlight .c1,
+.highlight .cd,
+.highlight .ch,
+.highlight .cm,
+.highlight .cpf,
+.highlight .cs {
+  color: #8e908c;
 }
 
-.highlight .k, /* Keyword */
-.highlight .kc, /* Keyword.Constant */
-.highlight .kd, /* Keyword.Declaration */
-.highlight .kr {
-  /* Keyword.Reserved */
-  color: #4f6f46;
+.highlight .cp,
+.highlight .nc,
+.highlight .nn,
+.highlight .no,
+.highlight .nt {
+  color: #eab700;
 }
 
-.highlight .mf, /* Literal.Number.Float */
-.highlight .mh, /* Literal.Number.Hex */
-.highlight .mi, /* Literal.Number.Integer */
-.highlight .mo, /* Literal.Number.Oct */
-.highlight .se, /* Literal.String.Escape */
-.highlight .si, /* Literal.String.Interpol */
-.highlight .il, /* Literal.Number.Integer.Long */
-.highlight .l, /* Literal */
-.highlight .m, /* Literal.Number */
-.highlight .sb, /* Literal.String.Backtick */
-.highlight .s2, /* Literal.String.Double */
-.highlight .sh, /* Literal.String.Hesyntax-redoc */
-.highlight .sx, /* Literal.String.Other */
-.highlight .sr, /* Literal.String.Regex */
-.highlight .s1, /* Literal.String.Single */
-.highlight .ss {
-  /* Literal.String.Symbol */
-  color: #445e50;
+.highlight .gd {
+  color: #c82829;
+}
+
+.highlight .gh,
+.highlight .na {
+  color: #4271ae;
+}
+
+.highlight .k,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv {
+  color: #8959a8;
+}
+
+.highlight .kc,
+.highlight .kd,
+.highlight .kt {
+  color: #f5871f;
+}
+
+.highlight .dl,
+.highlight .gi,
+.highlight .il,
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .mx,
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .sh,
+.highlight .ss,
+.highlight .sx {
+  color: #718c00;
+}
+
+.highlight .sr {
+  color: #3e999f;
+}
+
+.highlight .se,
+.highlight .si {
+  color: #a3685a;
 }
 
 /* Smaller screens */
