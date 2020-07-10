@@ -32,7 +32,7 @@ extremely entertaining. In the presentation, she essentially went through a
 large range of different programming styles from imperative to
 continuation-passing style, and it seemed somewhat reminiscent of [The Evolution
 of a Haskell
-Programmer](http://www.willamette.edu/~fruehr/haskell/evolution.html) by Fritz
+Programmer](https://www.willamette.edu/~fruehr/haskell/evolution.html) by Fritz
 Ruehr from Willamette University which was also a joy to read.
 
 [Rascal: the Swiss Army Knife of Meta

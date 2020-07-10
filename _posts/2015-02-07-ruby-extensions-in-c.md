@@ -20,7 +20,7 @@ $ touch ext/extconf.rb ext/fact.c
 ```
 
 In the `ext/extconf.rb` file, we require the
-[`mkmf`](http://ruby-doc.org/stdlib-2.0.0/libdoc/mkmf/rdoc/MakeMakefile.html)
+[`mkmf`](https://ruby-doc.org/stdlib-2.0.0/libdoc/mkmf/rdoc/MakeMakefile.html)
 module which allows us to generate an applicable Makefile that compiles our C
 code.
 
