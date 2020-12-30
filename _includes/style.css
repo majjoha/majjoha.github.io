@@ -28,7 +28,7 @@ a:hover {
 }
 
 code {
-  font-family: "Fira Code", "Menlo", monospace;
+  font-family: "JetBrains Mono", "Menlo", monospace;
 }
 
 img {
@@ -156,7 +156,7 @@ article time {
 .highlight {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  font-family: "Fira Code", "Menlo", monospace;
+  font-family: "JetBrains Mono", "Menlo", monospace;
   background: #fbfbfb;
   box-sizing: border-box;
   padding: 0.25rem 0.5rem;
