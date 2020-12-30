@@ -138,6 +138,10 @@ article time {
   align-self: center;
 }
 
+section > time {
+  color: #86868b;
+}
+
 .me {
   background: repeat -3vw 2vh/12vw auto url(/images/me.gif);
   border-image: url(/images/me-border.gif) 5% 5% repeat;
