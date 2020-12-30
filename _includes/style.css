@@ -169,17 +169,29 @@ pre {
   white-space: pre-wrap;
 }
 
+div.highlight {
+  border: 1px solid #efefef;
+  border-radius: 2px;
+}
+
 .highlight,
 .highlight .o,
 .highlight .ow,
 .highlight .p,
 .highlight .pi,
 .highlight .w {
-  color: #5f5f5f;
+  color: #282828;
 }
 
-.highlight .err {
-  color: #fff;
+.highlight .err,
+.highlight .gd,
+.highlight .k,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv,
+.highlight .nt {
+  color: #9d0006;
 }
 
 .highlight .c,
@@ -189,43 +201,26 @@ pre {
 .highlight .cm,
 .highlight .cpf,
 .highlight .cs {
-  color: #8e908c;
+  color: #928374;
 }
 
 .highlight .cp,
 .highlight .nc,
-.highlight .nn,
-.highlight .no,
-.highlight .nt {
-  color: #eab700;
-}
-
-.highlight .gd {
-  color: #c82829;
+.highlight .nn {
+  color: #427b58;
 }
 
 .highlight .gh,
-.highlight .na {
-  color: #4271ae;
-}
-
-.highlight .k,
-.highlight .kn,
-.highlight .kp,
-.highlight .kr,
-.highlight .kv {
-  color: #8959a8;
-}
-
-.highlight .kc,
-.highlight .kd,
-.highlight .kt {
-  color: #f5871f;
-}
-
-.highlight .dl,
 .highlight .gi,
+.highlight .na,
+.highlight .s1,
+.highlight .si,
+.highlight .sr {
+  color: #79740e;
+}
+
 .highlight .il,
+.highlight .kc,
 .highlight .m,
 .highlight .mb,
 .highlight .mf,
@@ -233,26 +228,30 @@ pre {
 .highlight .mi,
 .highlight .mo,
 .highlight .mx,
+.highlight .no {
+  color: #8f3f71;
+}
+
+.highlight .kt {
+  color: #b57614;
+}
+
+.highlight .dl,
+.highlight .kd,
 .highlight .s,
-.highlight .s1,
 .highlight .s2,
 .highlight .sa,
 .highlight .sb,
 .highlight .sc,
 .highlight .sd,
-.highlight .sh,
-.highlight .ss,
-.highlight .sx {
-  color: #718c00;
-}
-
-.highlight .sr {
-  color: #3e999f;
-}
-
 .highlight .se,
-.highlight .si {
-  color: #a3685a;
+.highlight .sh,
+.highlight .sx {
+  color: #af3a03;
+}
+
+.highlight .ss {
+  color: #076678;
 }
 
 /* Smaller screens */
