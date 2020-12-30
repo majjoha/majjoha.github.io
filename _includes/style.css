@@ -159,7 +159,7 @@ article time {
   font-family: "JetBrains Mono", "Menlo", monospace;
   background: #fbfbfb;
   box-sizing: border-box;
-  padding: 0.25rem 0.5rem;
+  padding: 0 0.5rem;
   margin: 1rem auto;
   max-width: 42rem;
   line-height: 1.5;
