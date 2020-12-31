@@ -15,3 +15,4 @@ title: "Lists"
 - [Top 10 Records of 2017](/lists/top-10-records-of-2017)
 - [Top 10 Records of 2018](/lists/top-10-records-of-2018)
 - [Top 10 Records of 2019](/lists/top-10-records-of-2019)
+- [Top 10 Records of 2020](/lists/top-10-records-of-2020)
