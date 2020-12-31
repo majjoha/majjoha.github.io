@@ -161,6 +161,7 @@ section > time {
   overflow-wrap: break-word;
   word-wrap: break-word;
   font-family: "JetBrains Mono", "Menlo", monospace;
+  font-size: 1rem;
   background: #fbfbfb;
   box-sizing: border-box;
   padding: 0 0.5rem;
