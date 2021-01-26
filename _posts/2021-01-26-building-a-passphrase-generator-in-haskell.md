@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Buidling a Passphrase Generator in Haskell"
+title: "Building a Passphrase Generator in Haskell"
 date: 2021-01-26 
 ---
 
