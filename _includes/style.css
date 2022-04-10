@@ -8,6 +8,15 @@
   --white: #fff;
   --font-default: -apple-system, BlinkMacSystemFont, "HelveticaNeue-Light", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Menlo", monospace;
+  --base03: #73777f;
+  --base07: #181c22;
+  --base08: #d02023;
+  --base09: #bf3e05;
+  --base0A: #9d6f00;
+  --base0B: #637200;
+  --base0C: #007a72;
+  --base0D: #0073b5;
+  --base0E: #4e66b6;
 }
 
 body {
@@ -202,85 +211,87 @@ div.highlight {
   border-radius: 0.25rem;
 }
 
-.highlight,
-.highlight .o,
-.highlight .ow,
-.highlight .p,
-.highlight .pi,
-.highlight .w {
-  color: #282828;
-}
+.highlight .c,  /* Comment */
+.highlight .cm, /* Comment.Multiline */
+.highlight .cp, /* Comment.Preproc */
+.highlight .c1, /* Comment.Single */
+.highlight .cs, /* Comment.Special */
+.highlight .gp, /* Generic.Prompt */
+.highlight .sd /* Literal.String.Doc */
+  { color: var(--base03) }
 
-.highlight .err,
-.highlight .gd,
-.highlight .k,
-.highlight .kn,
-.highlight .kp,
-.highlight .kr,
-.highlight .kv,
-.highlight .nt {
-  color: #9d0006;
-}
+.highlight .n, /* Name */
+.highlight .p, /* Punctuation */
+.highlight .gh, /* Generic.Heading */
+.highlight .nb, /* Name.Builtin */
+.highlight .ni, /* Name.Entity */
+.highlight .nl, /* Name.Label */
+.highlight .py, /* Name.Property */
+.highlight .w, /* Text.Whitespace */
+.highlight .sc, /* Literal.String.Char */
+.highlight .bp /* Name.Builtin.Pseudo */
+  { color: var(--base07) }
 
-.highlight .c,
-.highlight .c1,
-.highlight .cd,
-.highlight .ch,
-.highlight .cm,
-.highlight .cpf,
-.highlight .cs {
-  color: #928374;
-}
+.highlight .err, /* Error */
+.highlight .gd, /* Generic.Deleted */
+.highlight .no, /* Name.Constant */
+.highlight .ne, /* Name.Exception */
+.highlight .nv, /* Name.Variable */
+.highlight .vc, /* Name.Variable.Class */
+.highlight .vg, /* Name.Variable.Global */
+.highlight .vi /* Name.Variable.Instance */
+  { color: var(--base08) }
 
-.highlight .cp,
-.highlight .nc,
-.highlight .nn {
-  color: #427b58;
-}
+.highlight .l, /* Literal */
+.highlight .m, /* Literal.Number */
+.highlight .mf, /* Literal.Number.Float */
+.highlight .mh, /* Literal.Number.Hex */
+.highlight .mi, /* Literal.Number.Integer */
+.highlight .mo, /* Literal.Number.Oct */
+.highlight .se, /* Literal.String.Escape */
+.highlight .si, /* Literal.String.Interpol */
+.highlight .il /* Literal.Number.Integer.Long */
+  { color: var(--base09) }
 
-.highlight .gh,
-.highlight .gi,
-.highlight .na,
-.highlight .s1,
-.highlight .si,
-.highlight .sr {
-  color: #79740e;
-}
+.highlight .kt, /* Keyword.Type */
+.highlight .nc, /* Name.Class */
+.highlight .nn /* Name.Namespace */
+  { color: var(--base0A) }
 
-.highlight .il,
-.highlight .kc,
-.highlight .m,
-.highlight .mb,
-.highlight .mf,
-.highlight .mh,
-.highlight .mi,
-.highlight .mo,
-.highlight .mx,
-.highlight .no {
-  color: #8f3f71;
-}
+.highlight .gi, /* Generic.Inserted */
+.highlight .ld, /* Literal.Date */
+.highlight .s, /* Literal.String */
+.highlight .sb, /* Literal.String.Backtick */
+.highlight .s2, /* Literal.String.Double */
+.highlight .sh, /* Literal.String.Heredoc */
+.highlight .sx, /* Literal.String.Other */
+.highlight .sr, /* Literal.String.Regex */
+.highlight .s1, /* Literal.String.Single */
+.highlight .ss /* Literal.String.Symbol */
+  { color: var(--base0B) }
 
-.highlight .kt {
-  color: #b57614;
-}
+.highlight .o, /* Operator */
+.highlight .gu, /* Generic.Subheading */
+.highlight .kn, /* Keyword.Namespace */
+.highlight .nd, /* Name.Decorator */
+.highlight .nt, /* Name.Tag */
+.highlight .ow /* Operator.Word */
+  { color: var(--base0C) }
 
-.highlight .dl,
-.highlight .kd,
-.highlight .s,
-.highlight .s2,
-.highlight .sa,
-.highlight .sb,
-.highlight .sc,
-.highlight .sd,
-.highlight .se,
-.highlight .sh,
-.highlight .sx {
-  color: #af3a03;
-}
+.highlight .na, /* Name.Attribute */
+.highlight .nf, /* Name.Function */
+.highlight .nx /* Name.Other */
+  { color: var(--base0D) }
 
-.highlight .ss {
-  color: #076678;
-}
+.highlight .k, /* Keyword */
+.highlight .kc, /* Keyword.Constant */
+.highlight .kd, /* Keyword.Declaration */
+.highlight .kp, /* Keyword.Pseudo */
+.highlight .kr /* Keyword.Reserved */
+  { color: var(--base0E) }
+
+.highlight .ge {} /* Generic.Emph */
+.highlight .gs {} /* Generic.Strong */
 
 /* Smaller screens */
 @media only screen and (max-width: 960px) {
