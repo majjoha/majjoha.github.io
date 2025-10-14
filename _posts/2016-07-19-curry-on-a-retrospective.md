@@ -55,7 +55,9 @@ into encouraging diversity which I greatly appreciated, and I think the
 conference succeeded tremendously in enabling a conversation between academia,
 and the industry. Finally, it did not hurt that this was the venue:
 
-![Pontifical Gregorian University](/images/pontificia-universitas-gregoriana.jpg)
+<div>
+  <img src="/images/pontificia-universitas-gregoriana.jpg" class="img-with-shadow"/>
+</div>
 
 Next year, Curry On will be held in Barcelona, and I hope I'll be able to attend
 again.
