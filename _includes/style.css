@@ -355,7 +355,8 @@
 @layer responsive {
   @media (max-width: 960px) {
     body>header {
-      display: inline;
+      display: block;
+      padding-inline: var(--space-sm);
       text-align: center;
     }
 
